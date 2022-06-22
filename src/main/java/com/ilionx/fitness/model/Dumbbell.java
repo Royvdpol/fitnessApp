@@ -10,6 +10,9 @@ public class Dumbbell {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private int weight;
+    private String material;
+
     public Long getId() {
         return id;
     }
@@ -29,10 +32,4 @@ public class Dumbbell {
     public void setMaterial(String material) {
         this.material = material;
     }
-
-    private int weight;
-    private String material;
-
-
-
 }
