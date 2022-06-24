@@ -8,9 +8,16 @@ import javax.persistence.Id;
 public class Dumbbell {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private long id;
+    private int weight;
+    private String material;
 
-    public Long getId() {
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getId() {
         return id;
     }
 
@@ -29,9 +36,6 @@ public class Dumbbell {
     public void setMaterial(String material) {
         this.material = material;
     }
-
-    private int weight;
-    private String material;
 
 
 
