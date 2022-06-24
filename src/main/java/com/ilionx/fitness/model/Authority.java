@@ -1,6 +1,6 @@
 package com.ilionx.fitness.model;
 
-import com.ilionx.fitness.configs.AuthorityNames;
+import com.ilionx.fitness.model.security.AuthorityNames;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
