@@ -67,8 +67,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
                 .antMatchers("/h2-console/**").permitAll()
-                .antMatchers(String.valueOf(HttpMethod.OPTIONS), "/**").permitAll()
-                .antMatchers("/api/**").hasAuthority("ROLE_ADMIN")
+                .antMatchers((HttpMethod.OPTIONS), "/**").permitAll()
+                .antMatchers("/api/**").hasAuthority("ADMIN")
                 .anyRequest().authenticated(); // for now, all users can login and do everything
 
         // Custom JWT based security filter
